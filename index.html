@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Portfolio</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#Certificates">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Venkat</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#Certificates" onclick="toggleMenu()">Certificates</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/Yellow.jpg" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Venkat</h1>
+        <p class="section__text__p2">Data Analyst</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume1.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+
+        <style>
+  #socials-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .icon {
+    width: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .icon:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 12px rgba(0, 191, 255, 0.6); /* sky blue glow */
+    border-radius: 50%;
+  }
+</style>
+
+<div id="socials-container">
+  <img
+    src="./assets/linkedin.png"
+    alt="My LinkedIn profile"
+    class="icon"
+    onclick="location.href='https://www.linkedin.com/in/venkata-ramaiah-kunapareddy-7b7197334/'"
+  />
+  <img
+    src="./assets/github.png"
+    alt="My Github profile"
+    class="icon"
+    onclick="location.href='https://github.com/venkat-analytics'"
+  />
+</div>
+      </div>
+
+    </section>
+
+ <!-- Project Summary Section -->
+<style>
+  #projects-summary {
+    margin: 60px 0;
+    text-align: center;
+  }
+
+  #projects-summary h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 20px;
+  }
+
+  #projects-summary h2 span {
+    color: #2a3fdb; /* Blue highlight */
+  }
+
+  .projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .project-item {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    padding: 10px;
+    width: 110px;
+    height: 120px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+
+  .project-item:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 20px rgba(42, 63, 219, 0.3);
+  }
+
+  .project-item img {
+    width: 70px;
+    height: 45px;
+    object-fit: contain;
+    margin-bottom: 15px;
+  }
+
+  .project-item h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0d0d0d;
+    margin: 10px 0 5px;
+  }
+
+  .project-item p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin: 0;
+  }
+</style>
+
+<section id="projects-summary">
+  <h2><span></span></h2>
+
+  <div class="projects-container">
+
+    <!-- Excel Projects -->
+    <div class="project-item">
+      <img src="./assets/Microsoft_Excel_2013-2019_logo.svg" alt="Excel">
+      <h3>2</h3>
+      <p>Excel Projects</p>
+    </div>
+
+    <!-- Power BI Projects -->
+    <div class="project-item">
+      <img src="./assets/New_Power_BI_Logo.svg" alt="Power BI">
+      <h3></h3>
+      <p>Power BI Projects</p>
+    </div>
+
+    <!-- SQL Projects -->
+    <div class="project-item">
+      <img src="./assets/SQLDATA.jpg" alt="SQL">
+      <h3></h3>
+      <p>SQL Projects</p>
+    </div>
+
+    <!-- Python Projects -->
+    <div class="project-item">
+      <img src="./assets/Python-logo-notext.svg" alt="Python">
+      <h3></h3>
+      <p>Python Projects</p>
+    </div>
+
+    <!-- Tableau Projects -->
+    <div class="project-item">
+      <img src="./assets/tableau-software.svg" alt="Tableau">
+      <h3></h3>
+      <p>Tableau Projects</p>
+    </div>
+
+  </div>
+</section>
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/venky.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Fresher <br />Data Analyst <br />(Academic & Project Experience)</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Undergraduate<br />B.Tech in Information Technology<br />Intermediate(MPC)</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p style="font-size: 1.1rem; line-height: 1.7; color: #333;">
+      I’m a <strong>Data Analyst</strong> passionate about transforming complex information into clear, actionable insights. 
+      With a keen eye for detail and a drive to continuously learn, I specialize in leveraging tools like 
+      <strong>Excel, Power BI, SQL, Python and Tableau</strong> to solve challenging data problems.
+    </p>
+    <div style="text-align: left; margin-top: 20px;">
+      <ul style="font-size: 1rem; line-height: 1.8; color: #444; list-style: none; padding: 0;">
+        <li>➤ Crafting <strong>interactive dashboards</strong> in Power BI to bring data to life and enhance user engagement.</li>
+        <li>➤ Ensuring <strong>data quality</strong> through meticulous cleaning, standardization, and deduplication techniques.</li>
+        <li>➤ Extracting and analyzing data with precision using <strong>SQL</strong> and advanced querying methods.</li>
+        <li>➤ Delivering <strong>data-driven solutions</strong> to tackle complex business problems across various domains.</li>
+      </ul>
+    </div>
+
+    
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
+    
+    <!-- Skills Section -->
+   
+<style>
+  #skills {
+    margin: 60px 0;
+    text-align: center;
+  }
+
+  #skills h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 20px;
+  }
+
+  #skills h2 span {
+    color: #2a3fdb; /* Blue highlight */
+  }
+
+  .skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .skill-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    padding: 10px;
+    width: 90px;
+    height: 120px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+
+  .skill-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 20px rgba(42, 63, 219, 0.3);
+  }
+
+  .skill-card img {
+    width: 80px;
+    height: 75px;
+    object-fit: contain;
+    margin-bottom: 15px;
+  }
+
+  .skill-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #0d0d0d;
+    margin: 10px 0 0;
+  }
+</style>
+
+<section id="experience">
+   <p class="section__text__p1">Explore My</p>
+   <h1 class="title">Skills</h1>
+   <p style="margin-bottom:20px;"></p>
+
+  <div class="skills-container">
+
+    <!-- Excel -->
+    <div class="skill-card">
+      <img src="./assets/Microsoft_Excel_2013-2019_logo.svg" alt="Excel">
+      <h3>Excel</h3>
+    </div>
+
+    <!-- Power BI -->
+    <div class="skill-card">
+      <img src="./assets/New_Power_BI_Logo.svg" alt="Power BI">
+      <h3>Power BI</h3>
+    </div>
+
+    <!-- SQL -->
+    <div class="skill-card">
+      <img src="./assets/SQLDATA.jpg" alt="SQL">
+      <h3>SQL</h3>
+    </div>
+
+    <!-- Python -->
+    <div class="skill-card">
+      <img src="./assets/Python-logo-notext.svg" alt="Python">
+      <h3>Python</h3>
+    </div>
+
+    <!-- Tableau -->
+    <div class="skill-card">
+      <img src="./assets/tableau-software.svg" alt="Tableau">
+      <h3>Tableau</h3>
+    </div>
+
+    <!-- R -->
+    <div class="skill-card">
+      <img src="./assets/R.jpg" alt="R">
+      <h3>R</h3>
+    </div>
+
+    <!-- Statistics -->
+    <div class="skill-card">
+      <img src="./assets/statistics.jpg" alt="Statistics">
+      <h3>Statistics</h3>
+    </div>
+
+    <!-- GitHub -->
+    <div class="skill-card">
+      <img src="./assets/githubb.jpg" alt="GitHub">
+      <h3>GitHub</h3>
+    </div>
+    <style>
+  .skill-box {
+    background: #fff;
+    color: #000;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #000;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .skill-box img {
+    width: 20px;
+    height: 20px;
+    transition: all 0.3s ease;
+  }
+
+  .skill-box:hover {
+    background: #000;
+    color: #fff;
+  }
+
+ .skill-box:hover img {
+    filter: brightness(0) invert(1); /* makes icons white on hover */
+  }
+</style>
+
+<div style="margin-top: 35px;">
+  <h3 style="font-size: 1.5rem; color: #283593; margin-bottom: 15px;"></h3>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
+
+    <span class="skill-box">
+      <img src="./assets/dattacleaning.png" alt="Data Cleaning">
+      Data Cleaning
+    </span>
+
+    <span class="skill-box">
+      <img src="./assets/dattamlodeling.png" alt="Data Modeling">
+      Data Modeling
+    </span>
+
+    <span class="skill-box">
+      <img src="./assets/dattaanalysis.png" alt="Data Analysis">
+      Data Analysis
+    </span>
+
+    <span class="skill-box">
+      <img src="./assets/dattavisualization.png" alt="Data Visualization">
+      Data Visualization
+    </span>
+
+  </div>
+</div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+
+    .projects {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      max-width: 250px;
+      margin: auto;
+    }
+
+    /* Hover effect for card */
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .project-card img {
+      width: 100%;
+      height:350px;
+      border-radius: 10px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    /* Image zoom on hover */
+    .project-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 18px;
+      background: #434346;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+      border: none;
+    }
+
+    /* Hover effect for buttons */
+    .btn:hover {
+      background: #87CEEB;
+      color: #0f0f0f;
+      transform: translateY(-3px);
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    }
+
+    /* Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .modal-content {
+      background: #fff;
+      max-width: 900px;
+      width: 95%;
+      padding: 20px;
+      border-radius: 12px;
+      overflow-y: auto;
+      max-height: 90vh;
+      animation: fadeIn 0.4s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .close {
+      font-size: 22px;
+      cursor: pointer;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+
+    .close:hover {
+      color: red;
+    }
+
+    /* Buttons inside modal */
+    .project-buttons {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .linkedin-btn { background: #00BFFF; }
+    .linkedin-btn:hover { background: #e2ea45; }
+
+    .github-btn { background: #f75606; }
+    .github-btn:hover { background: #e2ea45; }
+
+    .powerbi-btn { background: #fff7e6; color: #f2a200; }
+    .powerbi-btn:hover { box-shadow: 0px 4px 12px rgba(242, 162, 0, 0.3); }
+  </style>
+</head>
+<body>
+
+
+<!-- ================= Projects Section ================= -->
+<section id="projects" class="projects">
+  <!-- Adventure Works Card -->
+  <div class="project-card">
+    <img src="./assets/Adventure.jpg" alt="Adventure Works">
+    <h2>Adventure Works Sales Analysis</h2>
+    
+    <button class="btn" onclick="openProject('project1')">View Project</button>
+    
+  </div>
+
+  <!-- Blinkit Grocery Sales Card -->
+  <div class="project-card">
+    <img src="./assets/BL.jpg" alt="Blinkit Grocery Sales">
+    <h2>Blinkit Grocery Sales Analysis</h2>
+    <button class="btn" onclick="openProject('project-blinkit')">View Project</button>
+  </div>
+</section>
+   
+
+ <!-- Adventure Works Modal -->
+<div id="project1" class="modal" onclick="outsideClick(event, 'project1')">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2></h2>
+      <div style="margin: 10px 0;">
+      <span style="background:#e2ea45; color:#000; padding:10px 20px; border-radius:8px; font-weight:600; font-size:22px;">
+       Adventure Works Sales Analysis
+      </span>
+    </div>
+      <span class="close" onclick="closeProject('project1')">&times;</span>
+    </div>
+
+    <!-- Project Badges Section -->
+      <p style="margin-top:15px;"></p>
+<div style="margin-bottom: 20px; text-align: center;">
+  <img src="https://img.shields.io/badge/Tool-Excel-green?logo=microsoft-excel&logoColor=white" alt="Excel">
+  <img src="https://img.shields.io/badge/Process-Data%20Cleaning-blue" alt="Data Cleaning">
+  <img src="https://img.shields.io/badge/Process-Data%20Modeling-orange" alt="Data Modeling">
+  <img src="https://img.shields.io/badge/Automation-Macros-red" alt="Macros">
+  <img src="https://img.shields.io/badge/Focus-Data%20Visualization-brightgreen" alt="Visualization">
+  <div style="position: relative;">
+  <img src="./assets/Microsoft_Excel_2013-2019_logo.svg" 
+       alt="Excel" 
+       style="width: 35px; position: absolute; top: -28px;right: 55px;" />
+</div>
+</div>
+  
+
+    <!-- Short Intro -->
+           <p style="margin-top:15px;"></p>
+    <h2>Introduction:</h2>
+     <p style="margin-bottom:10px;"></p>
+
+    <p>
+      Adventure Works Sales Analysis Dashboard is an Excel-based project showcasing sales performance 
+      across regions, products, and time periods. The dashboard provides interactive insights to 
+      help management track KPIs, identify growth opportunities, and improve decision-making.
+    </p>
+          <p style="margin-bottom:15px;"></p>
+
+
+    <!-- Project Details -->
+    <h3>Project Details:</h3>
+          <p style="margin-bottom:10px;"></p>
+
+    <p>
+      In this project, I leveraged advanced Excel features to build an interactive sales analytics dashboard:
+            <p style="margin-bottom:12px;"></p>
+
+    </p>
+    <ul>
+      <li>Collected and cleaned sales data from multiple Excel sources.</li>
+            <p style="margin-bottom:5px;"></p>
+
+      <li>Used <b>Power Query</b> for data transformation and loading.</li>
+      <p style="margin-bottom:5px;"></p>
+      <li>Applied <b>Power Pivot</b> and created a robust data model with relationships.</li>
+      <p style="margin-bottom:5px;"></p>
+      <li>Designed measures using <b>Lookup functions</b> for KPIs like Revenue, Profit, and Sales Growth.</li>
+      <p style="margin-bottom:5px;"></p>
+      <li>Created interactive visuals including slicers for Region, Product Category, and Year.</li>
+      <p style="margin-bottom:5px;"></p>
+      <li>Designed executive-friendly dashboard layout with charts, trend lines, and summary cards.</li>
+      <p style="margin-bottom:15px;"></p>
+    </ul>
+          <h3>Project Demo:</h3>
+          <p style="margin-bottom:15px;"></p>
+      <iframe title="Business Insights Dashboard"
+        width="100%" height="400"
+        src="https://onedrive.live.com/personal/eaec1dcfc0db11b4/_layouts/15/embed.aspx?UniqueId=c5a3292a-be8c-4dfa-858d-2024e93956c6"
+        frameborder="0" allowFullScreen="true"></iframe>
+
+    <!-- Buttons -->
+<div class="project-buttons">
+    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7370542613420216320/" target="_blank" class="btn linkedin-btn">
+      <img src="./assets/linkedin.png" alt="LinkedIn Logo">
+      View Project Engagement
+    </a>
+
+    <a href="https://github.com/venkat-analytics/Adventure-Works-Sales-Analysis" target="_blank" class="btn github-btn">
+      <img src="./assets/github.png" alt="GitHub Logo">
+      View Project on GitHub
+    </a>
+  </div>
+ </div>
+  </div>
+<!-- Blinkit Grocery Sales Modal -->
+<div id="project-blinkit" class="modal" onclick="outsideClick(event, 'project-blinkit')">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2></h2>
+      <div style="margin: 10px 0;">
+      <span style="background:#e2ea45; color:#000; padding:10px 20px; border-radius:8px; font-weight:600; font-size:22px;">
+      Blinkit Grocery Sales Analysis
+      </span>
+    </div>
+      <span class="close" onclick="closeProject('project-blinkit')">&times;</span>
+    </div>
+
+        <!-- Project Badges Section -->
+      <p style="margin-top:15px;"></p>
+<div style="margin-bottom: 20px; text-align: center;">
+  <img src="https://img.shields.io/badge/Tool-Excel-green?logo=microsoft-excel&logoColor=white" alt="Excel">
+  <img src="https://img.shields.io/badge/Process-Data%20Cleaning-blue" alt="Data Cleaning">
+  <img src="https://img.shields.io/badge/Process-Data%20Modeling-orange" alt="Data Modeling">
+  <img src="https://img.shields.io/badge/Process-Data%20Analysis-orange" alt="Data Analysis">
+  <img src="https://img.shields.io/badge/Focus-Data%20Visualization-brightgreen" alt="Visualization">
+  <div style="position: relative;">
+  <img src="./assets/Microsoft_Excel_2013-2019_logo.svg" 
+       alt="Excel" 
+       style="width: 35px; position: absolute; top: -28px; right: 55px;" />
+</div>
+</div>
+
+    <!-- Short Intro -->
+           <p style="margin-top:15px;"></p>
+    <h2>Introduction:</h2>
+     <p style="margin-bottom:10px;"></p>
+    <p>
+      Blinkit Grocery Sales Analysis Dashboard is an Excel-based project that provides 
+      insights into customer purchase behavior, product demand, and regional sales 
+      trends to support operational and marketing strategies.
+    </p>
+
+    <!-- Project Details -->
+     <p style="margin-top:15px;"></p>
+    <h3>Project Details:</h3>
+    <p style="margin-bottom:10px;"></p>
+    <p>
+      In this project, I applied Excel’s advanced analytics features to analyze Blinkit’s sales performance:
+    </p>
+    <p style="margin-bottom:10px;"></p>
+    <ul>
+      <li>Imported and cleaned transactional sales data from Blinkit datasets.</li>
+      <p style="margin-bottom:5px;"></p>
+      <li>Performed data modeling using <b>Power Query</b> and relationships in <b>Power Pivot</b>.</li>
+      <p style="margin-bottom:5px;"></p>
+      <li>Developed <b>measures</b> to track Total Sales, Average Basket Value, and Customer Retention.</li>
+      <p style="margin-bottom:5px;"></p>
+      <li>Designed category-level analysis for Fresh Produce, Packaged Goods, and Beverages.</li>
+      <p style="margin-bottom:5px;"></p>
+      <li>Added slicers for Date, Product Category, and Location to allow drill-down analysis.</li>
+      <p style="margin-bottom:5px;"></p>
+      <li>Created an intuitive dashboard highlighting sales trends and key operational insights.</li>
+    </ul>
+    <p style="margin-top:15px;"></p>
+     <h3>Live Dashboard:</h3>
+          <p style="margin-bottom:15px;"></p>
+      <iframe title="Business Insights Dashboard"
+        width="100%" height="400"
+        src="https://1drv.ms/x/c/eaec1dcfc0db11b4/IQRuXVhwcavqSbGC55OnctZEAdAyPwQqefo5SrF9lafD4UA?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"
+        frameborder="0" allowFullScreen="true"></iframe>
+
+    <!-- Buttons -->
+<div class="project-buttons">
+    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7365459076165640193/" target="_blank" class="btn linkedin-btn">
+      <img src="./assets/linkedin.png" alt="LinkedIn Logo">
+      View Project Engagement
+    </a>
+
+    <a href="https://github.com/venkat-analytics/Blinkit-Sales-Analysis-Dashboard"
+ target="_blank" class="btn github-btn">
+      <img src="./assets/github.png" alt="GitHub Logo">
+      View Project on GitHub
+    </a>
+  </div>
+
+  </div>
+</div>
+
+
+  <!-- Script -->
+  <script>
+    function openProject(id) {
+      document.getElementById(id).style.display = "flex";
+    }
+    function closeProject(id) {
+      document.getElementById(id).style.display = "none";
+    }
+    function outsideClick(e, id) {
+      if (e.target.id === id) {
+        closeProject(id);
+      }
+    }
+  </script>
+
+</body>
+</html>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#Certificates'"
+      />
+    </section>
+      <!-- Certificates Section -->
+<style>
+  #certificates {
+    margin: 60px 0;
+    text-align: center;
+  }
+
+  #certificates h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 20px;
+  }
+
+  #certificates h2 span {
+    color: #0c0c0c; /* Blue highlight */
+  }
+
+  .certificates-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .certificate-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 320px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .certificate-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 20px rgba(42, 63, 219, 0.3);
+  }
+
+  .certificate-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+
+  .certificate-card p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+  }
+</style>
+
+<section id="Certificates">
+  <h1 class="title">Certificates</h1>
+  <p style="margin-bottom:20px;"></p>
+
+  <div class="certificates-container">
+
+    <!-- Certificate 1 -->
+    <a href="./assets/GenAI DATA.png" target="_blank" class="certificate-card">
+      <img src="./assets/GenAI DATA.png" alt="GenAI Powered Data Analytics">
+      <p>GenAI Powered Data Analytics</p>
+    </a>
+
+    <!-- Certificate 2 -->
+    <a href="./assets/data science.jpg" target="_blank" class="certificate-card">
+      <img src="./assets/data science.jpg" alt="Data Science">
+      <p>Data Science</p>
+    </a>
+    </div>
+  </div>
+  <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+  <h1 class="title">Contact Me</h1>
+  <div class="contact-info-upper-container">
+
+    <!-- Gmail -->
+    <div class="contact-info-container">
+      <a href="mailto:venkat198881@gmail.com">
+        <img
+          src="./assets/ggmail.png"
+          alt="Email icon"
+          class="icon contact-icon email-icon"
+        />
+      </a>
+      <p><a href="mailto:venkat198881@gmail.com">Gmail</a></p>
+    </div>
+
+    <!-- LinkedIn -->
+    <div class="contact-info-container">
+      <a href="https://www.linkedin.com/in/venkata-ramaiah-kunapareddy-7b7197334/" target="_blank">
+        <img
+          src="./assets/llinkidin.png"
+          alt="LinkedIn icon"
+          class="icon contact-icon"
+        />
+      </a>
+      <p><a href="https://www.linkedin.com/in/venkata-ramaiah-kunapareddy-7b7197334/" target="_blank">LinkedIn</a></p>
+    </div>
+
+  </div>
+</section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#Certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Venkat. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
